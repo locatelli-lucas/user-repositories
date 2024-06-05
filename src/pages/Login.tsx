@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import {  getUser } from "../services/users.service";
 import { useNavigate } from "react-router-dom";
+import Logo from "../assets/github.png";
 
 export function Login() {
     const[search, setSearch] = useState("");
@@ -40,7 +41,7 @@ export function Login() {
     return (
         <div className="flex">
             <div className="bg-blue-700 w-3/5 h-screen flex justify-center items-center">
-                <img src="src\assets\github.png" alt="github image" className="w-80 h-80"/>
+                <img src={Logo} alt="github image" className="w-80 h-80"/>
             </div>
             <div className="w-2/5 h-screen flex flex-col justify-center items-center">
                 {check && (
