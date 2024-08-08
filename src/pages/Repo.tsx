@@ -56,7 +56,7 @@ export function Repo() {
                         <hr className="w-10/12 mx-auto"/>
                         <div className="flex flex-col justify-center border-none my-5 mx-20 px-5 rounded-2xl bg-gray-100 mb-8">
                             <span className="ml-1 my-2 text-xs text-slate-400">Link</span>
-                            <a href="#" className="ml-1 mb-2 font-semibold hover:underline">{repos?.html_url}</a>
+                            <a href={repos?.html_url} className="ml-1 mb-2 font-semibold hover:underline">{repos?.html_url}</a>
                         </div>
                         <div className="flex flex-col justify-center border-none border my-5 mx-20 px-5 rounded-2xl bg-gray-100 mb-8">
                             <span className="ml-1 my-2 text-xs text-slate-400">Privacidade</span>
